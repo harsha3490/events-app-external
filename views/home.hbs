@@ -1,9 +1,16 @@
 <ul >
   {{#events}}
     <li>
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-        <h3>{{location}}</h3>
-    </li>
+        <div class="card">
+            <div class="card-header">
+                {{ title }}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ description }}</h5>
+                <p class="card-text">{{location}}</p>
+                <a href="#" class="btn btn-primary">Like</a>
+            </div>
+        </div>
+    </li>   
   {{/events}}
 </ul>
